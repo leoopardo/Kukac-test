@@ -1,0 +1,61 @@
+.cep-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 300px;
+}
+.endereco{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid black;
+    color: rgb(219, 151, 3);
+    background-color: rgb(7, 18, 112)  
+}
+.card-endereco{
+    width: 200px;
+    margin: 2%;
+    border: 1px solid rgb(219, 151, 3);
+}
+
+.card-endereco:hover{
+    border: rgb(7, 18, 112);
+    color: rgb(7, 18, 112);
+    background-color: rgb(219, 151, 3);
+}
+.solucao-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cep-input{
+    border-radius: 5px;
+    width: 150px;
+    height: 35px;
+    background-color: rgb(7, 18, 112);
+    color: rgb(230, 158, 3);
+    font-size: 25px;
+    font-weight: 600;
+}
+.cep-input:hover{
+    background-color: rgb(230, 158, 3);
+    color: rgb(7, 18, 112);
+}
+.procurar{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 10px;
+    height: 40px;
+    color: rgb(7, 18, 112);
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgb(230, 158, 3);
+    border: 1px solid rgb(0, 0, 0);
+}
+.procurar:active{
+    width: 205px;
+    height: 35px;
+    background-color: rgba(230, 158, 3, 0.863);
+}

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./style.modules.css"
 export function Troco() {
-    //state de todos os polindromos
+    //state de todos das notas e valor total
     const [trocoEmNotas, setTrocoEmNotas] = useState({
         SemValor: "Escolha o valor da compra e do pagamento!",
         ValorTotal: 0,
@@ -16,7 +16,7 @@ export function Troco() {
         valorPagamento: 0,
     });
 
-    //função para encontrar os polindromos
+    //função para calcular o numero de notas
     async function CalcularNotas(e){
         try{
             e.preventDefault()
@@ -26,14 +26,13 @@ export function Troco() {
             "100": 0,
             "10": 0,
             "1": 0
-        } 
+        };
             for(const nota of notas){
                 while(TrocoTotal >= nota){
                     troco[nota] += 1
                     TrocoTotal -= nota
                 }
-            
-            }
+            };
             console.log(trocoEmNotas)
             setTrocoEmNotas({
                 ValorTotal: (compraPagamento.valorPagamento - compraPagamento.valorCompra),
@@ -41,7 +40,7 @@ export function Troco() {
                 Dez: troco[10],
                 Um: troco[1]
 
-            })
+            });
             e.preventDefault();
             
             
