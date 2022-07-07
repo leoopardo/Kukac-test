@@ -1,0 +1,33 @@
+.page{
+    height: 600px;
+    background-image: url("../../img/estevamgomes_kukac_banner_gg.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.solucao{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(7, 18, 112);
+    width: 200px;
+    height: 50px;
+    background-color: rgb(230, 158, 3);
+    border: 1px solid white;
+}
+.solucao:hover{
+    color: rgb(219, 151, 3);
+    background-color: rgb(7, 18, 112);
+    font-weight: 700;
+}
+@media screen and (max-width: 800px){
+    .page{
+        height: 700px;
+        background-image: url("../../img/estevamgomes_kukac_banner_gg.jpg");
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content:space-around;
+    }
+}
